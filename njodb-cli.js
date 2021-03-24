@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const vm = require("vm");
 const path = require("path");
 const readline = require("readline");

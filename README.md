@@ -60,7 +60,7 @@ njodb> db.aggregate(
  ... > );
  ```
 
-## Comands
+## Commands
 
 In addition to the `njodb` methods, there are several commands specific to `njodb-cli`.
 

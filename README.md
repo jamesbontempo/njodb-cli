@@ -14,7 +14,7 @@
 
 ## Install
 
-One needs to install `njodb-cli` as a global package so that it can be executed from the command line directly.
+One needs to install `njodb-cli` as a global package so that it can be executed from the command line directly:
 ```
 npm install -g njodb-cli
 ```

@@ -1,6 +1,6 @@
 # njodb-cli
 
-A simple command-line interface (CLI) for [njodb](#https://www.npmjs.com/package/njodb).
+A simple command-line interface (CLI) for [njodb](https://www.npmjs.com/package/njodb).
 
 ## Table of contents
 - [Install](#install)
@@ -39,7 +39,7 @@ Additional commands:
 njodb>
 ```
 
-For information about the database methods and the data they return see the [njodb documentation](#https://www.npmjs.com/package/njodb). By default, `njodb-cli` uses the synchronous versions of the methods (but you don't have to specify "Sync"). This allows for easy chaining, like in this example where the data returned from a `select` call is sorted by `id`:
+For information about the database methods and the data they return see the [njodb documentation](https://www.npmjs.com/package/njodb). By default, `njodb-cli` uses the synchronous versions of the methods (but you don't have to specify "Sync"). This allows for easy chaining, like in this example where the data returned from a `select` call is sorted by `id`:
 ```
 db.select(r => r.id <= 100).data.sort((a, b) => a.id - b.id);
 ```

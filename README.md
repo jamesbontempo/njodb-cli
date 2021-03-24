@@ -1,6 +1,6 @@
 # njodb-cli
 
-A simple command-line interface (CLI) for [njodb](https://www.npmjs.com/package/njodb).
+`njodb-cli` is a simple command-line interface (CLI) for [njodb](https://www.npmjs.com/package/njodb).
 
 ## Table of contents
 - [Install](#install)

@@ -44,7 +44,7 @@ For information about the database methods and the data they return see the [njo
 db.select(r => r.id <= 100).data.sort((a, b) => a.id - b.id);
 ```
 
-If for some reason you want to use the asynchronous versions of the methods, you can specify `--async` during start-up:
+If for some reason you want to use the asynchronous versions of the methods, you can specify that during start-up:
 ```
 node njodb-cli.js --async
 ```

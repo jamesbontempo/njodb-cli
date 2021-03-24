@@ -1,7 +1,7 @@
 {
   "name": "njodb-cli",
   "version": "0.1.0",
-  "description": "Command line interface (CLI) for njodb",
+  "description": "A simple command line interface (CLI) for njodb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,0 +1,28 @@
+{
+  "name": "njodb-cli",
+  "version": "0.1.0",
+  "description": "Command line interface (CLI) for njodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "interface",
+    "cli",
+    "node",
+    "json",
+    "object",
+    "database",
+    "njodb"
+  ],
+  "author": "James BonTempo",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.21.0"
+  },
+  "dependencies": {
+    "njodb": "^0.4.7"
+  }
+}

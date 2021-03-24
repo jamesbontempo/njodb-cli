@@ -1,6 +1,6 @@
 {
   "name": "njodb-cli",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A simple command line interface (CLI) for njodb",
   "main": "njodb-cli.js",
   "bin": {

@@ -14,19 +14,19 @@
 
 ## Install
 ```
-npm install njodb-cli
+npm install -g njodb-cli
 ```
 
 ## Introduction
 
 Start up the CLI and create or connect to an existing NJODB in the current working directory:
 ```
-node njodb-cli.js
+njodb-cli.js
 ```
 
 Start up the CLI and create or connect to an existing NJODB in another directory:
 ```
-node njodb-cli.js --root /path/to/somewhere
+njodb-cli.js --root /path/to/somewhere
 ```
 
 Upon successful startup:
@@ -46,7 +46,7 @@ db.select(r => r.id <= 100).data.sort((a, b) => a.id - b.id);
 
 If for some reason you want to use the asynchronous versions of the methods, you can specify that during start-up:
 ```
-node njodb-cli.js --async
+njodb-cli.js --async
 ```
 
 Some `njodb` method calls can be verbose, so `njodb-cli` allows multi-line entry (and will even try to help auto-indent):

@@ -1,4 +1,4 @@
-#njodb-cli
+# njodb-cli
 
 A simple command-line interface (CLI) for [njodb](#https://www.npmjs.com/package/njodb).
 

@@ -1,10 +1,10 @@
 {
   "name": "njodb-cli",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A simple command line interface (CLI) for njodb",
   "main": "njodb-cli.js",
   "bin": {
-      "njodb-cli": "./njodb-cli.js"
+    "njodb-cli": "./njodb-cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +26,6 @@
     "eslint": "^7.21.0"
   },
   "dependencies": {
-    "njodb": "^0.4.7"
+    "njodb": "^0.4.11"
   }
 }

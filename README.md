@@ -33,7 +33,7 @@ njodb-cli.js --root /path/to/somewhere
 
 Upon successful startup:
 ```
-Connected to the database at /Users/jamesbontempo/github/njodb-cli using njodb 0.4.7
+Connected to the database at /Users/jamesbontempo/github/njodb-cli using njodb 0.4.33
 Available database methods (prepend with db. and end with ;):
 	aggregate, delete, drop, grow, insert, insertFile, resize, select, shrink, stats, update
 Additional commands:
@@ -41,7 +41,7 @@ Additional commands:
 njodb>
 ```
 
-For information about the database methods and the data they return see the [njodb documentation](https://www.npmjs.com/package/njodb). By default, `njodb-cli` uses the synchronous versions of the methods (but you don't have to specify "Sync"). This allows for easy chaining, like in this example where the data returned from a `select` call is sorted by `id`:
+For information about the database methods and the data they return see the [njodb documentation](https://www.npmjs.com/package/njodb). By default, `njodb-cli` uses the synchronous versions of the methods (but you don't have to include "Sync"). This allows for easy chaining, like in this example where the data returned from a `select` call is sorted by `id`:
 ```
 db.select(r => r.id <= 100).data.sort((a, b) => a.id - b.id);
 ```
@@ -49,6 +49,11 @@ db.select(r => r.id <= 100).data.sort((a, b) => a.id - b.id);
 If for some reason you want to use the asynchronous versions of the methods, you can specify that during start-up:
 ```
 njodb-cli.js --async
+```
+
+And then you can achieve the same result as the above example with:
+```
+db.select(r => r.id <= 100).then(results => results.data.sort((a, b) => a.id - b.id));
 ```
 
 Some `njodb` method calls can be verbose, so `njodb-cli` allows multi-line entry (and will even try to help auto-indent):

@@ -133,10 +133,12 @@ rl.on("line", async (line) => {
                         delete results.details;
 
                         if (/select|aggregate/.test(method)) {
-                            if (results.data) {
+                            if (Array.isArray(results.data)) {
                                 data = results.data.slice(10);
                             } else if (Array.isArray(results)) {
                                 data = results.slice(10);
+                            } else {
+                                data = [results].slice(10);
                             }
                         } else {
                             data = [];
